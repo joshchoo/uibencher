@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "key": "avg50",
+      "name": "50th percentile (avg)",
+      "pattern": "gfx-avg-frame-time-50",
+      "prefix": "gfx-avg-frame-time-50=",
+      "suffix": ""
+    },
+    {
+      "key": "avg90",
+      "name": "90th percentile (avg)",
+      "pattern": "gfx-avg-frame-time-90",
+      "prefix": "gfx-avg-frame-time-90=",
+      "suffix": ""
+    },
+    {
+      "key": "avg95",
+      "name": "95th percentile (avg)",
+      "pattern": "gfx-avg-frame-time-95",
+      "prefix": "gfx-avg-frame-time-95=",
+      "suffix": ""
+    },
+    {
+      "key": "avg99",
+      "name": "99th percentile (avg)",
+      "pattern": "gfx-avg-frame-time-99",
+      "prefix": "gfx-avg-frame-time-99=",
+      "suffix": ""
+    },
+    {
+      "key": "avgJank",
+      "name": "Jank percentage (avg)",
+      "pattern": "gfx-avg-jank",
+      "prefix": "gfx-avg-jank=",
+      "suffix": ""
+    },
+    {
+      "key": "max50",
+      "name": "50th percentile (max)",
+      "pattern": "gfx-max-frame-time-50",
+      "prefix": "gfx-max-frame-time-50=",
+      "suffix": ""
+    },
+    {
+      "key": "max90",
+      "name": "90th percentile (max)",
+      "pattern": "gfx-max-frame-time-90",
+      "prefix": "gfx-max-frame-time-90=",
+      "suffix": ""
+    },
+    {
+      "key": "max95",
+      "name": "95th percentile (max)",
+      "pattern": "gfx-max-frame-time-95",
+      "prefix": "gfx-max-frame-time-95=",
+      "suffix": ""
+    },
+    {
+      "key": "max99",
+      "name": "99th percentile (max)",
+      "pattern": "gfx-max-frame-time-99",
+      "prefix": "gfx-max-frame-time-99=",
+      "suffix": ""
+    },
+    {
+      "key": "maxJank",
+      "name": "Jank percentage (max)",
+      "pattern": "gfx-max-jank",
+      "prefix": "gfx-max-jank=",
+      "suffix": ""
+    }
+  ]
+}

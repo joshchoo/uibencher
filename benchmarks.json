@@ -1,0 +1,174 @@
+{
+  "benchmarks": [
+    {
+      "class": "UiBenchRenderingJankTests",
+      "tests": [
+        {
+          "name": "Bitmap Upload",
+          "method": "testBitmapUploadJank",
+          "iterations": 1
+        },
+        {
+          "name": "Shadow Grid",
+          "method": "testShadowGridListFling",
+          "iterations": 1
+        }
+      ]
+    },
+    {
+      "class": "UiBenchLeanbackJankTests",
+      "tests": [
+        {
+          "name": "Browse Fragment (Fast lane scroll)",
+          "method": "testBrowseFastLaneScroll",
+          "iterations": 5
+        },
+        {
+          "name": "Browse Fragment (Content scroll)",
+          "method": "testBrowseContentScroll",
+          "iterations": 5
+        },
+        {
+          "name": "Browse Fragment (Fast lane scroll no bitmap upload)",
+          "method": "testBrowseFastLaneScrollNoBitmapUpload",
+          "iterations": 5
+        },
+        {
+          "name": "Browse Fragment (Content scroll no bitmap upload)",
+          "method": "testBrowseContentScrollNoBitmapUpload",
+          "iterations": 5
+        }
+      ]
+    },
+    {
+      "class": "UiBenchWebView",
+      "tests": [
+        {
+          "name": "Scrollable WebView",
+          "method": "testWebViewFling",
+          "iterations": 1
+        }
+      ]
+    },
+    {
+      "class": "UiBenchTextJankTests",
+      "tests": [
+        {
+          "name": "Layout Cache High Hitrate",
+          "method": "testLayoutCacheHighHitrateFling",
+          "iterations": 1
+        },
+        {
+          "name": "Layout Cache Low Hitrate",
+          "method": "testLayoutCacheLowHitrateFling",
+          "iterations": 1
+        }
+      ]
+    },
+    {
+      "class": "UiBenchTransitionsJankTests",
+      "tests": [
+        {
+          "name": "Activity Transition",
+          "method": "testActivityTransitionsAnimation",
+          "iterations": 5
+        }
+      ]
+    },
+    {
+      "class": "UiBenchJankTests",
+      "tests": [
+        {
+          "name": "Dialog List",
+          "method": "testDialogListFling",
+          "iterations": 5
+        },
+        {
+          "name": "Fullscreen Overdraw",
+          "method": "testFullscreenOverdraw",
+          "iterations": 1
+        },
+        {
+          "name": "GL TextureView",
+          "method": "testGLTextureView",
+          "iterations": 1
+        },
+        {
+          "name": "Invalidate",
+          "method": "testInvalidate",
+          "iterations": 1
+        },
+        {
+          "name": "Invalidate Tree",
+          "method": "testInvalidateTree",
+          "iterations": 1
+        },
+        {
+          "name": "Trivial Animation",
+          "method": "testTrivialAnimation",
+          "iterations": 1
+        },
+        {
+          "name": "Trivial ListView",
+          "method": "testTrivialListViewFling",
+          "iterations": 5
+        },
+        {
+          "name": "Fading Edge ListView",
+          "method": "testFadingEdgeListViewFling",
+          "iterations": 5
+        },
+        {
+          "name": "SaveLayer Animation",
+          "method": "testSaveLayerAnimation",
+          "iterations": 1
+        },
+        {
+          "name": "Trivial RecyclerView",
+          "method": "testTrivialRecyclerListViewFling",
+          "iterations": 3
+        },
+        {
+          "name": "Slow Bind RecyclerView",
+          "method": "testSlowBindRecyclerViewFling",
+          "iterations": 3
+        },
+        {
+          "name": "Slow Nested RecyclerView",
+          "method": "testSlowNestedRecyclerViewFling",
+          "iterations": 5
+        },
+        {
+          "name": "Slow Nested RecyclerView (Initial fling)",
+          "method": "testSlowNestedRecyclerViewInitialFling",
+          "iterations": 5
+        },
+        {
+          "name": "Inflating ListView",
+          "method": "testInflatingListViewFling",
+          "iterations": 5
+        },
+        {
+          "name": "Navigation Drawer Activity",
+          "method": "testOpenNavigationDrawer",
+          "iterations": 5
+        },
+        {
+          "name": "Notification Shade",
+          "method": "testOpenNotificationShade",
+          "iterations": 3
+        },
+        {
+          "name": "Resize HW Layer",
+          "method": "testResizeHWLayer",
+          "iterations": 1
+        },
+        {
+          "name": "Clipped ListView",
+          "method": "testClippedListView",
+          "iterations": 5
+        }
+      ]
+    }
+  ]
+}
