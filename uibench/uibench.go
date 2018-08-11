@@ -38,6 +38,9 @@ func (u *Uibench) Automate() {
 	// for each config test case, execute "adb shell am"
 	for _, benchmarks := range u.config.Benchmarks {
 		for idxTests, tests := range benchmarks.Tests {
+			repeat := true
+
+		EXECUTE:
 			fmt.Printf("Executing: %s [%d time(s)]\n", tests.Name, tests.Iterations)
 			output, err := execUibenchCommand(benchmarks.Class, tests.Method, tests.Iterations)
 			if err != nil {
@@ -62,6 +65,17 @@ func (u *Uibench) Automate() {
 							var result Result = Result{name: data.Name, value: resultFloat}
 							benchmarks.Tests[idxTests].results = append(benchmarks.Tests[idxTests].results, result)
 						}
+					}
+				}
+
+				// Check if results were collected successfully
+				if len(benchmarks.Tests[idxTests].results) == 0 {
+					if repeat == true {
+						fmt.Println("Failed to collect results. Repeating the test one more time.")
+						repeat = false
+						goto EXECUTE
+					} else {
+						fmt.Println("Still failed to collect results. Skipping to the next test...")
 					}
 				}
 			}
